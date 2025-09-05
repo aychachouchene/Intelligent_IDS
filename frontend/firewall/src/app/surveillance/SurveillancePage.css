@@ -1,0 +1,121 @@
+
+/* SurveillancePage.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background-color:  #1e3c72;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+button.toggle-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+button.start {
+  background-color: #10b981; /* green */
+}
+
+button.start:hover {
+  background-color: #059669;
+}
+.return-button {
+  
+  color: white;              /* ✅ texte blanc */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #1976d2;
+}
+
+button.stop {
+  background-color: #ef4444; /* red */
+}
+
+button.stop:hover {
+  background-color: #dc2626;
+}
+
+.table-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f3f4f6;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.status-malicieux {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.status-bon {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.status-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #374151;
+}

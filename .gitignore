@@ -1,0 +1,22 @@
+# Environnements virtuels
+.venv/
+env/
+venv/
+
+images/
+
+# Fichiers générés
+*.pkl
+backend/firewall/static/reports/
+backend/firewall/static/results/
+backend/firewall/uploads/
+frontend/firewall/.next/
+
+# Fichiers de verrouillage 
+package-lock.json
+
+# Ignorer les fichiers temporaires ou IDE
+*.pyc
+__pycache__/
+*.swp
+.DS_Store

@@ -1,0 +1,392 @@
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .uploadSection {
+    margin: 3rem 0;
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .uploadLabel {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .uploadLabel:hover {
+    background: #f9f9f9;
+  }
+  
+  .analyzeButton {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .analyzeButton:hover {
+    background: #0056b3;
+  }
+  
+  .results {
+    margin-top: 3rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .error {
+    color: #ff4444;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #ffecec;
+    border-radius: 5px;
+  }
+  .container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .backButton {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .backButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .mainContent {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .uploadCard {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .dropzone {
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+  }
+  
+  .dropzone.active {
+    border-color: #1e3c72;
+    background-color: rgba(30, 60, 114, 0.05);
+  }
+  
+  .uploadContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .uploadIcon {
+    width: 48px;
+    height: 48px;
+    fill: #1e3c72;
+    opacity: 0.8;
+  }
+  
+  .uploadText {
+    text-align: center;
+  }
+  
+  .dropText {
+    color: #212529;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  .fileTypes {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0;
+  }
+  
+  .fileInfo {
+    text-align: center;
+  }
+  
+  .fileName {
+    font-weight: 500;
+    color: #212529;
+    margin: 0;
+  }
+  
+  .fileSize {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+  }
+  
+  .analyzeButton {
+    width: 100%;
+    margin-top: 1.5rem;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .analyzeButton:disabled {
+    background: #adb5bd;
+    cursor: not-allowed;
+  }
+  
+  .buttonContent {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .errorBox {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #ffe3e6;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .errorIcon {
+    color: #dc3545;
+    font-size: 1.2rem;
+  }
+  
+  .errorText {
+    color: #dc3545;
+    margin: 0;
+  }
+  
+  .resultsSection {
+    margin-top: 3rem;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .resultsTitle {
+    color: #3b4860;
+    margin-bottom: 2rem;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .statCard {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .statCard h3 {
+    color: #6c757d;
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #212529;
+  }
+  
+  .statCard.malicious {
+    background: #fff5f5;
+  }
+  
+  .statCard.malicious h3 {
+    color: #dc3545;
+  }
+  
+  .predictionsBox {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .predictionsTitle {
+    color: #1e3c72;
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .predictionsContent {
+    background: white;
+    border-radius: 6px;
+    padding: 1rem;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  .predictionsContent pre {
+    margin: 0;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+  }
+
+  /* PredictPage.module.css */
+.plotContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 500px; /* Ajustez selon vos besoins */
+  margin: 20px 0;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.resultPlot {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* Ajoutez ces styles */
+.plotContainer {
+  margin: 20px 0;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.resultPlot {
+  max-width: 100%;
+  height: auto;
+}
+
+.predictionsTableContainer {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.predictionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.predictionsTable th, 
+.predictionsTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.predictionsTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.benignPrediction {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.maliciousPrediction {
+  color: #dc3545;
+  font-weight: 500;
+}
+/* Removed invalid JSON-like block */
+
+/* Animation du spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px;
+}
+  
+  @media (max-width: 768px) {
+    .mainContent {
+      padding: 0 1rem;
+    }
+  
+    .uploadCard {
+      padding: 1.5rem;
+    }
+  
+    .statsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
