@@ -3,7 +3,6 @@
 env/
 venv/
 
-images/
 
 # Fichiers générés
 *.pkl
